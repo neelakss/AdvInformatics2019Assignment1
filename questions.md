@@ -143,7 +143,7 @@ Exit status: 0
    crash?  Show an example of a skeleton HPC script as part of your answer.  **Knowing how to do this is super important
    and will save you loads of frustration and prevent you from taking out your colleagues' jobs on the cluster,
    preventing you from getting nasty emails from Harry!!!!!!!!!!!**
-> Using the command "-l mem_free=XG" one could specify the RAM requirement for the jobs one needs to run. The following is the skeleton script for running multiple parallel jobs on one node:
+> Using the command "-l mem_free=XG" one could specify the RAM requirement for the jobs one needs to run. The following is the skeleton script for running multiple serial jobs on one node:
 <pre><code>#! /bin/bash/
 #$ -N MPJ 
 #$ -pe openmp 8-64
