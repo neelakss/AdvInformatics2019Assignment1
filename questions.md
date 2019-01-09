@@ -75,14 +75,13 @@ less output.txt
 <pre><code>{ /usr/bin/time -v sleep 2.0 >/dev/null; } 2>&1 | grep -e Elapsed -e Maximum > textfile.txt
 less textfile.txt
 </code></pre>
-<pre><code> Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.00
+<pre><code>Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.00
 Maximum resident set size (kbytes): 1652
 </code></pre>
 4. What are the units of your answer for number 3?
 > The run time has the units as "hours:minutes:seconds" and the units for the peak ram usage is Kbytes.
-5. What are the bash commands for the following operations:
-
-    * Checking that a file exists
+5. What are the bash commands for the following operations:  
+* Checking that a file exists
     <pre><code>file=./output.txt #can change the name depending on requirement
   if [ -e "$file" ]; then
     echo "File exists"
@@ -92,16 +91,16 @@ Maximum resident set size (kbytes): 1652
   </code></pre>
   <pre><code>File exists
   </pre></code>
-    * Checking that a file exists and is not empty
-  <pre><code>file=./output.txt
-  if [ -s "$file" ]; then 
-    echo " File exists and is not empty "
-  else
-    echo " File does not exist, or is empty "
-  fi
-  </code></pre>
-  <pre><code>File exists and is not empty
-  </code></pre>
+ * Checking that a file exists and is not empty
+   <pre><code>file=./output.txt
+   if [ -s "$file" ]; then 
+     echo " File exists and is not empty "
+   else
+     echo " File does not exist, or is empty "
+   fi
+   </code></pre>
+   <pre><code>File exists and is not empty
+   </code></pre>
 6. How would you use the commands from your answer to 5 to write a work flow for HPC that only runs a job if the
    expected output file is **not** present.
 > The command given below could be used to do the same:
