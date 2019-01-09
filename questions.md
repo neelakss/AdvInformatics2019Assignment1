@@ -79,7 +79,7 @@ less textfile.txt
 Maximum resident set size (kbytes): 1652
 </code></pre>
 4. What are the units of your answer for number 3?
-> The run time has the units as "hours:minutes:seconds" and the units for the peak ram usage is Kbytes.
+> The run time has the units as "minutes:seconds" and the units for the peak ram usage is Kbytes.
 5. What are the bash commands for the following operations:  
 * Checking that a file exists
     <pre><code>file=./output.txt #can change the name depending on requirement
