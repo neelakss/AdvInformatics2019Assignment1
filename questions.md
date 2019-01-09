@@ -145,8 +145,8 @@ Exit status: 0
    preventing you from getting nasty emails from Harry!!!!!!!!!!!**
 > Using the command "-l mem_free=XG" one could specify the RAM requirement for the jobs one needs to run. The following is the skeleton script for running multiple parallel jobs on one node:
 <pre><code>#! /bin/bash/
-#$ -N MPJ # Name would change accordingly for all the said jobs
-#$ -pe one-node-mpi 2-64
+#$ -N MPJ 
+#$ -pe openmp 8-64
 #$ -q free*,bio,epyc
 #$ -R y
 #$ -l mem_free=96G
